@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Post List Table View Controller-->
         <scene sceneID="FyR-6j-sRV">
             <objects>
-                <tableViewController id="xfY-og-tcV" sceneMemberID="viewController">
+                <tableViewController id="xfY-og-tcV" customClass="PostListTableViewController" customModule="Reddit36" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wwG-Qh-afD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="M7I-Gn-Pya">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" id="M7I-Gn-Pya" customClass="PostTableViewCell" customModule="Reddit36" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="180.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M7I-Gn-Pya" id="09U-Cr-43F">
@@ -62,6 +62,11 @@
                                         <constraint firstItem="yXR-eh-tGR" firstAttribute="top" secondItem="09U-Cr-43F" secondAttribute="top" constant="8" id="s3d-CN-lEa"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="thumbnailImageView" destination="S2E-dE-fS3" id="dvR-vz-WSj"/>
+                                    <outlet property="titleLabel" destination="pZo-Kn-f0q" id="1oN-LU-QLb"/>
+                                    <outlet property="upvoteLabel" destination="IqS-7C-Ws7" id="SFg-Aa-47K"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

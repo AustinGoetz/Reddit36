@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A68DB4A251BE47C0088F53F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A68DB49251BE47C0088F53F /* PostTableViewCell.swift */; };
+		2A68DB4E251BE94C0088F53F /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A68DB4D251BE94C0088F53F /* PostListTableViewController.swift */; };
+		2A68DB51251BEF800088F53F /* ErrorActionSheetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A68DB50251BEF800088F53F /* ErrorActionSheetExtension.swift */; };
 		2AAFA2EF251BAA15009CF52D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFA2EE251BAA15009CF52D /* AppDelegate.swift */; };
 		2AAFA2F1251BAA15009CF52D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFA2F0251BAA15009CF52D /* SceneDelegate.swift */; };
 		2AAFA2F6251BAA15009CF52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAFA2F4251BAA15009CF52D /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A68DB49251BE47C0088F53F /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		2A68DB4D251BE94C0088F53F /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		2A68DB50251BEF800088F53F /* ErrorActionSheetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorActionSheetExtension.swift; sourceTree = "<group>"; };
 		2AAFA2EB251BAA14009CF52D /* Reddit36.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit36.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAFA2EE251BAA15009CF52D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AAFA2F0251BAA15009CF52D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A68DB48251BE45B0088F53F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2A68DB49251BE47C0088F53F /* PostTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		2AAFA2E2251BAA14009CF52D = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +107,7 @@
 		2AAFA307251BAA39009CF52D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2A68DB48251BE45B0088F53F /* CustomViews */,
 				2AAFA309251BAA42009CF52D /* Storyboards */,
 			);
 			path = Views;
@@ -117,6 +132,7 @@
 		2AAFA30A251BAA4C009CF52D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A68DB4D251BE94C0088F53F /* PostListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -133,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				2AAFA315251BB6B3009CF52D /* PostError.swift */,
+				2A68DB50251BEF800088F53F /* ErrorActionSheetExtension.swift */,
 			);
 			path = HelpersAndExtensions;
 			sourceTree = "<group>";
@@ -207,11 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A68DB51251BEF800088F53F /* ErrorActionSheetExtension.swift in Sources */,
 				2AAFA316251BB6B4009CF52D /* PostError.swift in Sources */,
 				2AAFA310251BAEB9009CF52D /* Post.swift in Sources */,
+				2A68DB4E251BE94C0088F53F /* PostListTableViewController.swift in Sources */,
 				2AAFA313251BB53A009CF52D /* PostController.swift in Sources */,
 				2AAFA2EF251BAA15009CF52D /* AppDelegate.swift in Sources */,
 				2AAFA2F1251BAA15009CF52D /* SceneDelegate.swift in Sources */,
+				2A68DB4A251BE47C0088F53F /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
